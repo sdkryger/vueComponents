@@ -2,7 +2,7 @@
   <div class="col">
     This is the welcome component where the rpm is: {{rpm}} and the speed is: {{speed}}
     <div class="row">
-      <radial-gauge-component name="rpm" class="col-2"></radial-gauge-component>
+      <radial-gauge-component name="rpm" class="col-2" :options="{yes:'one'}"></radial-gauge-component>
       <radial-gauge-component name="speed" class="col-2"></radial-gauge-component>
     </div>
     <div class="row">
