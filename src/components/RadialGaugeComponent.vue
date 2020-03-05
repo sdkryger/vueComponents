@@ -25,13 +25,17 @@
     },
     computed:{
       value(){
-        return this.$store.state.numericData[name];
+        return this.$store.state.numericData[this.name];
+      }
+    },
+    watch:{
+      value: function(val){
+        console.log("should update gauge");
+        this.chart.value = this.value;
       }
     },
     mounted(){
-      console.log(this.$store.state.numericData.rpm);
       this.myOptions = Object.assign({}, this.options);
-      //console.log(JSON.stringify(this.$el));
       this.myOptions.value = this.value;
       this.myOptions.renderTo = "radialGauge"+this.id;
       this.initGauge();
