@@ -155,6 +155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n/
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/index.js?!./src/components/RadialGaugeComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./src/components/RadialGaugeComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  props:['name']\n});\n\n\n//# sourceURL=webpack:///./src/components/RadialGaugeComponent.vue?./node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/index.js?!./src/components/WelcomeComponent.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib??vue-loader-options!./src/components/WelcomeComponent.vue?vue&type=script&lang=js& ***!
@@ -163,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  computed:{\n    rpm(){\n      return this.$store.state.numericData.rpm;\n    },\n    speed(){\n      return this.$store.state.numericData.speed;\n    }\n  }\n});\n\n\n//# sourceURL=webpack:///./src/components/WelcomeComponent.vue?./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  computed:{\n    rpm(){\n      return this.$store.state.numericData.rpm;\n    },\n    speed(){\n      return this.$store.state.numericData.speed;\n    }\n  }\n});\n\n\n//# sourceURL=webpack:///./src/components/WelcomeComponent.vue?./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -203,6 +215,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/RadialGaugeComponent.vue?vue&type=template&id=60254ab3&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RadialGaugeComponent.vue?vue&type=template&id=60254ab3& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"col\" }, [\n    _vm._v(\"\\n  \" + _vm._s(_vm.name) + \"\\n\")\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/RadialGaugeComponent.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/WelcomeComponent.vue?vue&type=template&id=d633fb2a&":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/WelcomeComponent.vue?vue&type=template&id=d633fb2a& ***!
@@ -211,7 +235,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"col\" }, [\n    _vm._v(\n      \"\\n  This is the welcome component where the rpm is: \" +\n        _vm._s(_vm.rpm) +\n        \" and the speed is: \" +\n        _vm._s(_vm.speed) +\n        \"\\n  \"\n    ),\n    _c(\n      \"div\",\n      { staticClass: \"row\" },\n      [_c(\"modify-numeric-data-component\", { staticClass: \"col-12\" })],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/WelcomeComponent.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"col\" }, [\n    _vm._v(\n      \"\\n  This is the welcome component where the rpm is: \" +\n        _vm._s(_vm.rpm) +\n        \" and the speed is: \" +\n        _vm._s(_vm.speed) +\n        \"\\n  \"\n    ),\n    _c(\n      \"div\",\n      { staticClass: \"row\" },\n      [\n        _c(\"radial-gauge-component\", {\n          staticClass: \"col-2\",\n          attrs: { name: \"rpm\" }\n        }),\n        _vm._v(\" \"),\n        _c(\"radial-gauge-component\", {\n          staticClass: \"col-2\",\n          attrs: { name: \"speed\" }\n        })\n      ],\n      1\n    ),\n    _vm._v(\" \"),\n    _c(\n      \"div\",\n      { staticClass: \"row\" },\n      [_c(\"modify-numeric-data-component\", { staticClass: \"col-12\" })],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./src/components/WelcomeComponent.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -306,7 +330,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\r\n\r\n\r\n\r\n\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('welcome-component', __webpack_require__(/*! ./components/WelcomeComponent.vue */ \"./src/components/WelcomeComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('modify-numeric-data-component', __webpack_require__(/*! ./components/ModifyNumericDataComponent.vue */ \"./src/components/ModifyNumericDataComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('numeric-data-sim-component', __webpack_require__(/*! ./components/NumericDataSimComponent.vue */ \"./src/components/NumericDataSimComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use(vuex__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\r\n\r\nconst store = new vuex__WEBPACK_IMPORTED_MODULE_1__[\"default\"].Store({\r\n  state: {\r\n    count: 0,\r\n    state:'welcome',\r\n    numericData:{\r\n      speed:12,\r\n      rpm:1000\r\n    }\r\n  },\r\n  mutations: {\r\n  \tincrement: state => state.count++,\r\n    decrement: state => state.count--,\r\n    updateState (state, payload){\r\n      state.state = payload;\r\n    },\r\n    updateNumericData (state, payload){\r\n      state.numericData[payload.key] = payload.value;\r\n    }\r\n  }\r\n})\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\r\n  el: '#app',\r\n  store,\r\n  data:{\r\n    message:\"app message\"\r\n  },\r\n  mounted: function () {\r\n    console.log(\"root mounted\");\r\n  },\r\n  render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\r\n})\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\r\n\r\n\r\n\r\n\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('welcome-component', __webpack_require__(/*! ./components/WelcomeComponent.vue */ \"./src/components/WelcomeComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('modify-numeric-data-component', __webpack_require__(/*! ./components/ModifyNumericDataComponent.vue */ \"./src/components/ModifyNumericDataComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('numeric-data-sim-component', __webpack_require__(/*! ./components/NumericDataSimComponent.vue */ \"./src/components/NumericDataSimComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component('radial-gauge-component', __webpack_require__(/*! ./components/RadialGaugeComponent.vue */ \"./src/components/RadialGaugeComponent.vue\").default);\r\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].use(vuex__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\r\n\r\nconst store = new vuex__WEBPACK_IMPORTED_MODULE_1__[\"default\"].Store({\r\n  state: {\r\n    count: 0,\r\n    state:'welcome',\r\n    numericData:{\r\n      speed:12,\r\n      rpm:1000\r\n    }\r\n  },\r\n  mutations: {\r\n  \tincrement: state => state.count++,\r\n    decrement: state => state.count--,\r\n    updateState (state, payload){\r\n      state.state = payload;\r\n    },\r\n    updateNumericData (state, payload){\r\n      state.numericData[payload.key] = payload.value;\r\n    }\r\n  }\r\n})\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\r\n  el: '#app',\r\n  store,\r\n  data:{\r\n    message:\"app message\"\r\n  },\r\n  mounted: function () {\r\n    console.log(\"root mounted\");\r\n  },\r\n  render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\r\n})\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -379,6 +403,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NumericDataSimComponent_vue_vue_type_template_id_1d7fe75d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./NumericDataSimComponent.vue?vue&type=template&id=1d7fe75d& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/NumericDataSimComponent.vue?vue&type=template&id=1d7fe75d&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NumericDataSimComponent_vue_vue_type_template_id_1d7fe75d___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NumericDataSimComponent_vue_vue_type_template_id_1d7fe75d___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/NumericDataSimComponent.vue?");
+
+/***/ }),
+
+/***/ "./src/components/RadialGaugeComponent.vue":
+/*!*************************************************!*\
+  !*** ./src/components/RadialGaugeComponent.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _RadialGaugeComponent_vue_vue_type_template_id_60254ab3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RadialGaugeComponent.vue?vue&type=template&id=60254ab3& */ \"./src/components/RadialGaugeComponent.vue?vue&type=template&id=60254ab3&\");\n/* harmony import */ var _RadialGaugeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RadialGaugeComponent.vue?vue&type=script&lang=js& */ \"./src/components/RadialGaugeComponent.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _RadialGaugeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _RadialGaugeComponent_vue_vue_type_template_id_60254ab3___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _RadialGaugeComponent_vue_vue_type_template_id_60254ab3___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/components/RadialGaugeComponent.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=webpack:///./src/components/RadialGaugeComponent.vue?");
+
+/***/ }),
+
+/***/ "./src/components/RadialGaugeComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./src/components/RadialGaugeComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_RadialGaugeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib??vue-loader-options!./RadialGaugeComponent.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js?!./src/components/RadialGaugeComponent.vue?vue&type=script&lang=js&\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_node_modules_vue_loader_lib_index_js_vue_loader_options_RadialGaugeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./src/components/RadialGaugeComponent.vue?");
+
+/***/ }),
+
+/***/ "./src/components/RadialGaugeComponent.vue?vue&type=template&id=60254ab3&":
+/*!********************************************************************************!*\
+  !*** ./src/components/RadialGaugeComponent.vue?vue&type=template&id=60254ab3& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RadialGaugeComponent_vue_vue_type_template_id_60254ab3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./RadialGaugeComponent.vue?vue&type=template&id=60254ab3& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/RadialGaugeComponent.vue?vue&type=template&id=60254ab3&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RadialGaugeComponent_vue_vue_type_template_id_60254ab3___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RadialGaugeComponent_vue_vue_type_template_id_60254ab3___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/RadialGaugeComponent.vue?");
 
 /***/ }),
 
