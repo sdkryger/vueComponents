@@ -15,7 +15,10 @@ const store = new Vuex.Store({
     state:'welcome',
     numericData:{
       speed:12,
-      rpm:1000
+      rpm:1000,
+      voltage: 13.8,
+      coolantTemp: 105.6,
+      fuelLevel:0.75
     }
   },
   mutations: {

@@ -1,10 +1,21 @@
 <template>
   <div class="col">
     <div class="row">
-      <radial-gauge-component name="rpm" class="col-3" :options="gaugeRpmOptions"></radial-gauge-component>
-      <radial-gauge-component name="speed" class="col-3" :options="gaugeSpeedOptions"></radial-gauge-component>
+      <radial-gauge-component name="rpm" class="col-4" :options="gaugeRpmOptions"></radial-gauge-component>
+      <radial-gauge-component name="speed" class="col-4" :options="gaugeSpeedOptions"></radial-gauge-component>
+      <div class="col-4">
+        <div class="row">
+          <radial-gauge-component name="coolantTemp" :options="gaugeCoolantTempOptions"></radial-gauge-component>
+        </div>
+        <div class="row">
+          <radial-gauge-component name="fuelLevel" :options="gaugeFuelLevelOptions"></radial-gauge-component>
+        </div>
+        <div class="row">
+          <radial-gauge-component name="voltage" :options="gaugeVoltageOptions"></radial-gauge-component>
+        </div>
+      </div>
     </div>
-    
+   
     <div class="row">
       <modify-numeric-data-component class="col-12"></modify-numeric-data-component>
     </div>
@@ -28,7 +39,8 @@
           }],
           units:'x 1000',
           title:'RPM',
-          valueDec:0
+          valueDec:0,
+          valueInt:1
         },
         gaugeSpeedOptions:{
           minValue:0,
@@ -37,7 +49,49 @@
           minorTicks:4,
           title:'MPH',
           highlights:false,
-          valueDec:0
+          valueDec:0,
+          valueInt:1
+        },
+        gaugeCoolantTempOptions:{
+          minValue:50,
+          maxValue:150,
+          majorTicks:[50,100,150],
+          minorTicks:5,
+          title:'Coolant',
+          units:'degC',
+          highlights:false,
+          valueDec:1
+        },
+        gaugeFuelLevelOptions:{
+          minValue:0,
+          maxValue:1,
+          majorTicks:['0','1/2','1'],
+          minorTicks:2,
+          title:'Fuel',
+          highlights:[
+            {
+              from:0,
+              to:0.125,
+              color:'#a83232'
+            }
+          ],
+          valueBox:false
+        },
+        gaugeVoltageOptions:{
+          minValue:10,
+          maxValue:16,
+          majorTicks:[10,12,14,16],
+          minorTicks:2,
+          title:'Voltage',
+          highlights:[
+            {
+              from:10,
+              to:12,
+              color:'#a83232'
+            }
+          ],
+          valueDec:2,
+          valueInt:1
         },
         gaugeCommonOptions:{
           colorPlate:'transparent',
@@ -61,6 +115,9 @@
         console.log("Property: "+property);
         this.$set(this.gaugeSpeedOptions,property,this.gaugeCommonOptions[property]);
         this.$set(this.gaugeRpmOptions,property,this.gaugeCommonOptions[property]);
+        this.$set(this.gaugeCoolantTempOptions,property,this.gaugeCommonOptions[property]);
+        this.$set(this.gaugeFuelLevelOptions,property,this.gaugeCommonOptions[property]);
+        this.$set(this.gaugeVoltageOptions,property,this.gaugeCommonOptions[property]);
       }
     },
     computed:{
