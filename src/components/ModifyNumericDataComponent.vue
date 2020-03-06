@@ -14,7 +14,8 @@
   export default{
     data(){
       return{
-        message:"Modify numeric data component"
+        message:"Modify numeric data component",
+        count:0
       }
     },
     computed:{
@@ -23,16 +24,36 @@
           value: this.$store.state.numericData.rpm,
           min: 1000,
           max: 6000,
-          sineGenerate:false
+          sineGenerate:true
         } 
       },
       speed(){
         return{
           value: this.$store.state.numericData.speed,
           min: 0,
-          max: 250,
-          sineGenerate:false
+          max: 190,
+          sineGenerate:true
         } 
+      }
+    },
+    mounted(){
+      console.log("data sim mounted");
+      window.setInterval(this.updateValues,100);
+    },
+    methods:{
+      updateValues(){
+        //console.log("Should update values");
+        if(this.rpm.sineGenerate){
+          var range = this.rpm.max - this.rpm.min;
+          var val = parseFloat((Math.sin(this.count)* (range / 2) + (this.rpm.min + range/2) ).toFixed(1));
+          this.$store.commit('updateNumericData',{key:'rpm',value:val});
+        }
+        if(this.speed.sineGenerate){
+          var range = this.speed.max - this.speed.min;
+          var val = parseFloat((Math.sin(this.count)* (range / 2) + (this.speed.min + range/2) ).toFixed(1));
+          this.$store.commit('updateNumericData',{key:'speed',value:val});
+        }
+        this.count+=Math.PI/45;
       }
     }
   }

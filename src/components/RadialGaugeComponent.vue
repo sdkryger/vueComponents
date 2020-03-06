@@ -1,6 +1,5 @@
 <template>
   <div class="col">
-    {{name}}
     <canvas class="canvas-gauges" :id="'radialGauge'+id"></canvas>
   </div>
 </template>
@@ -20,21 +19,24 @@
       return{
         chart: null,
         myOptions:{},
-        id:''
+        id:'',
+        scalingFactor:1
       }
     },
     computed:{
       value(){
-        return this.$store.state.numericData[this.name];
+        return this.$store.state.numericData[this.name] * this.scalingFactor;
       }
     },
     watch:{
       value: function(val){
-        console.log("should update gauge");
+        //console.log("should update gauge");
         this.chart.value = this.value;
       }
     },
     mounted(){
+      if(this.options.scalingFactor)
+        this.scalingFactor = this.options.scalingFactor;
       this.myOptions = Object.assign({}, this.options);
       this.myOptions.value = this.value;
       this.myOptions.renderTo = "radialGauge"+this.id;
