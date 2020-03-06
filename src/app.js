@@ -47,13 +47,13 @@ new Vue({
     this.$mqtt.publish('test from me','yes, working');
     this.$mqtt.subscribe('numericData/#');
     this.$mqtt.on("message", function(topic, message) {
-      console.log("Root got mqtt message with topic: "+topic);
+      //console.log("Root got mqtt message with topic: "+topic);
       var topicArray = topic.split("/");
       switch(topicArray[0]){
         case 'numericData':
           var key = topicArray[1];
           var value = parseFloat(message);
-          console.log("Got key: "+key+", value: "+value);
+          //console.log("Got key: "+key+", value: "+value);
           this.$store.commit('updateNumericData',{key:key,value:value});
           break;
         default:
