@@ -60,7 +60,9 @@
           title:'Coolant',
           units:'degC',
           highlights:false,
-          valueDec:1
+          valueDec:1,
+          ticksAngle:180,
+          startAngle:90
         },
         gaugeFuelLevelOptions:{
           minValue:0,
@@ -75,7 +77,9 @@
               color:'#a83232'
             }
           ],
-          valueBox:false
+          valueBox:false,
+          ticksAngle:180,
+          startAngle:90
         },
         gaugeVoltageOptions:{
           minValue:10,
@@ -91,7 +95,9 @@
             }
           ],
           valueDec:2,
-          valueInt:1
+          valueInt:1,
+          ticksAngle:180,
+          startAngle:90
         },
         gaugeCommonOptions:{
           colorPlate:'transparent',
