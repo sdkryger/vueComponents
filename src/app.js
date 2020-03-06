@@ -37,7 +37,7 @@ new Vue({
   el: '#app',
   store,
   data:{
-    message:"app message"
+    message:"root message"
   },
   mounted: function () {
     console.log("root mounted");
@@ -47,7 +47,7 @@ new Vue({
     this.$mqtt.publish('test from me','yes, working');
     this.$mqtt.subscribe('numericData/#');
     this.$mqtt.on("message", function(topic, message) {
-      console.log("App got mqtt message with topic: "+topic);
+      console.log("Root got mqtt message with topic: "+topic);
       var topicArray = topic.split("/");
       switch(topicArray[0]){
         case 'numericData':

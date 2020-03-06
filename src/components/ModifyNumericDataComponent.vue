@@ -1,11 +1,24 @@
 <template>
-  <div class="col">
-    Modify data here...
+  <div class="col alert alert-secondary">
+    <div class="row">
+      <div class="col-12 h4">
+        Data input
+      </div>
+    </div>
+    <div class="row">
+      <numeric-data-sim-component name="coolantTemp" :myData="coolantTemp"></numeric-data-sim-component>
+    </div>
+    <div class="row">
+      <numeric-data-sim-component name="fuelLevel" :myData="fuelLevel"></numeric-data-sim-component>
+    </div>
     <div class="row">
       <numeric-data-sim-component name="rpm" :myData="rpm"></numeric-data-sim-component>
     </div>
     <div class="row">
       <numeric-data-sim-component name="speed" :myData="speed"></numeric-data-sim-component>
+    </div>
+    <div class="row">
+      <numeric-data-sim-component name="voltage" :myData="voltage"></numeric-data-sim-component>
     </div>
   </div>
 </template>
@@ -19,6 +32,16 @@
       }
     },
     computed:{
+      coolantTemp(){
+        return{
+          value: this.$store.state.numericData.coolantTemp
+        }
+      },
+      fuelLevel(){
+        return{
+          value: this.$store.state.numericData.fuelLevel
+        }
+      },
       rpm(){
         return{
           value: this.$store.state.numericData.rpm,
@@ -34,6 +57,11 @@
           max: 190,
           sineGenerate:false
         } 
+      },
+      voltage(){
+        return{
+          value: this.$store.state.numericData.voltage
+        }
       }
     },
     mounted(){
