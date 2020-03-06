@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <welcome-component v-if="appState == 'welcome'"></welcome-component>
+      <dashboard-component v-if="view == 'dashboard'"></dashboard-component>
     </div>
   </div>
 </template>
@@ -17,8 +17,8 @@
           console.log("App component mounted");
         },
         computed:{
-          appState(){
-            return this.$store.state.state;
+          view(){
+            return this.$store.state.view;
           }
         }
     }

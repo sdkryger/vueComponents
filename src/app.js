@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import App from './App.vue'
 import VueMqtt from 'vue-mqtt'
 
-Vue.component('welcome-component', require('./components/WelcomeComponent.vue').default);
+Vue.component('dashboard-component', require('./components/DashboardComponent.vue').default);
 Vue.component('modify-numeric-data-component', require('./components/ModifyNumericDataComponent.vue').default);
 Vue.component('numeric-data-sim-component', require('./components/NumericDataSimComponent.vue').default);
 Vue.component('radial-gauge-component', require('./components/RadialGaugeComponent.vue').default);
@@ -12,7 +12,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     count: 0,
-    state:'welcome',
+    view:'dashboard',
     numericData:{
       speed:12,
       rpm:1000,
