@@ -4,6 +4,7 @@ import App from './App.vue'
 import VueMqtt from 'vue-mqtt'
 
 Vue.component('dashboard-component', require('./components/DashboardComponent.vue').default);
+Vue.component('dashboard-2-component', require('./components/Dashboard2Component.vue').default);
 Vue.component('modify-numeric-data-component', require('./components/ModifyNumericDataComponent.vue').default);
 Vue.component('numeric-data-sim-component', require('./components/NumericDataSimComponent.vue').default);
 Vue.component('radial-gauge-component', require('./components/RadialGaugeComponent.vue').default);
@@ -24,8 +25,8 @@ const store = new Vuex.Store({
   mutations: {
   	increment: state => state.count++,
     decrement: state => state.count--,
-    updateState (state, payload){
-      state.state = payload;
+    changeView (state, payload){
+      state.view = payload;
     },
     updateNumericData (state, payload){
       state.numericData[payload.key] = payload.value;
