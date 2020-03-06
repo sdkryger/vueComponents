@@ -24,7 +24,7 @@
           value: this.$store.state.numericData.rpm,
           min: 1000,
           max: 6000,
-          sineGenerate:true
+          sineGenerate:false
         } 
       },
       speed(){
@@ -32,7 +32,7 @@
           value: this.$store.state.numericData.speed,
           min: 0,
           max: 190,
-          sineGenerate:true
+          sineGenerate:false
         } 
       }
     },
