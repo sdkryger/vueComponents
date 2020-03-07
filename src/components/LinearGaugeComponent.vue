@@ -54,7 +54,7 @@
         }catch(err){
           console.log("init of gauge "+this.id+" failed");
           console.log(err);
-          window.setTimeout(this.initGauge,1000);
+          window.setTimeout(this.initGauge,100);
         }
       }
     }

@@ -123,9 +123,9 @@
       }
     },
     created(){
-      console.log("welcome component created");
+      console.log("dashboard component created");
       for(const property in this.gaugeCommonOptions){
-        console.log("Property: "+property);
+        //console.log("Property: "+property);
         this.$set(this.gaugeSpeedOptions,property,this.gaugeCommonOptions[property]);
         this.$set(this.gaugeRpmOptions,property,this.gaugeCommonOptions[property]);
         this.$set(this.gaugeCoolantTempOptions,property,this.gaugeCommonOptions[property]);
