@@ -8,6 +8,7 @@ Vue.component('dashboard-2-component', require('./components/Dashboard2Component
 Vue.component('modify-numeric-data-component', require('./components/ModifyNumericDataComponent.vue').default);
 Vue.component('numeric-data-sim-component', require('./components/NumericDataSimComponent.vue').default);
 Vue.component('radial-gauge-component', require('./components/RadialGaugeComponent.vue').default);
+Vue.component('linear-gauge-component', require('./components/linearGaugeComponent.vue').default);
 Vue.use(Vuex)
 
 const store = new Vuex.Store({

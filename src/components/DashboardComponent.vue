@@ -58,11 +58,18 @@
           majorTicks:[50,100,150],
           minorTicks:5,
           title:'Coolant',
-          units:'degC',
+          units:'\xB0'+'C',
           highlights:false,
           valueDec:1,
           ticksAngle:180,
-          startAngle:90
+          startAngle:90,
+          highlights:[
+            {
+              from:130,
+              to:150,
+              color:'#a83232'
+            }
+          ]
         },
         gaugeFuelLevelOptions:{
           minValue:0,

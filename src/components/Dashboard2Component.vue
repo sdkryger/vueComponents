@@ -1,10 +1,19 @@
 <template>
   <div class="col">
     <div class="row">
-      <radial-gauge-component class="col-4" name="coolantTemp" :options="gaugeCoolantTempOptions"></radial-gauge-component>
-      <radial-gauge-component class="col-4" name="fuelLevel" :options="gaugeFuelLevelOptions"></radial-gauge-component>
-      <radial-gauge-component class="col-4" name="voltage" :options="gaugeVoltageOptions"></radial-gauge-component>
-       
+      <div class="col">
+        <div class="row">
+          <radial-gauge-component class="col-4" name="fuelLevel" :options="gaugeFuelLevelOptions"></radial-gauge-component>
+        </div>
+        <div class="row">
+          <radial-gauge-component class="col-4" name="voltage" :options="gaugeVoltageOptions"></radial-gauge-component>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <linear-gauge-component name="coolantTemp" :options="gaugeCoolantTempOptions"></linear-gauge-component>
+        </div>
+      </div> 
     </div>
    
     <div class="row">
@@ -49,11 +58,20 @@
           majorTicks:[50,100,150],
           minorTicks:5,
           title:'Coolant',
-          units:'degC',
+          units:'\xB0'+'C',
           highlights:false,
           valueDec:1,
           ticksAngle:180,
-          startAngle:90
+          startAngle:90,
+          width:100,
+          height:400,
+          highlights:[
+            {
+              from:130,
+              to:150,
+              color:'#a83232'
+            }
+          ]
         },
         gaugeFuelLevelOptions:{
           minValue:0,
