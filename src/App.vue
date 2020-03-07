@@ -18,7 +18,7 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <chart-component></chart-component>
+        <chart-component :config="chartOptions"></chart-component>
       </div>
       <div class="row">
         <dashboard-component v-if="view == 'dashboard'"></dashboard-component>
@@ -33,7 +33,16 @@
     export default {
         data(){
             return{
-                message: "hello"
+                message: "hello",
+                chartOptions:{
+                  bufferLength:300,
+                  fontColor:'#ccc',
+                  plots:[
+                    'rpm',
+                    'speed'
+                  ],
+                  updateRate:1000
+                }
             }
         },
         mounted: function () {
