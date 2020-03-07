@@ -84,10 +84,15 @@
       },
       updateData(){
         console.log("update chart");
+        var maxPoints = this.config.bufferLength;
         this.data.labels.push('0');
+        if(this.data.labels.length>maxPoints)
+          this.data.labels.splice(0,1);
         for (var i=0;i<this.plotNames.length;i++){
           
           this.data.datasets[i].data.push(this.$store.state.numericData[this.plotNames[i]]);
+          if(this.data.datasets[i].data.length>maxPoints)
+            this.data.datasets[i].data.splice(0,1);
         }
         this.chart.update();
       },

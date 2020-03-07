@@ -17,11 +17,11 @@ const store = new Vuex.Store({
     count: 0,
     view:'dashboard',
     numericData:{
-      speed:12,
-      rpm:1000,
-      voltage: 13.8,
-      coolantTemp: 105.6,
-      fuelLevel:0.75
+      speed:NaN,
+      rpm:NaN,
+      voltage: NaN,
+      coolantTemp: NaN,
+      fuelLevel:NaN
     }
   },
   mutations: {
