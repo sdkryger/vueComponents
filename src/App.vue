@@ -18,8 +18,12 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
+        <chart-component></chart-component>
+      </div>
+      <div class="row">
         <dashboard-component v-if="view == 'dashboard'"></dashboard-component>
         <dashboard-2-component v-if="view == 'dashboard2'"></dashboard-2-component>
+        
       </div>
     </div>
   </div>

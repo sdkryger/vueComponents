@@ -9,6 +9,7 @@ Vue.component('modify-numeric-data-component', require('./components/ModifyNumer
 Vue.component('numeric-data-sim-component', require('./components/NumericDataSimComponent.vue').default);
 Vue.component('radial-gauge-component', require('./components/RadialGaugeComponent.vue').default);
 Vue.component('linear-gauge-component', require('./components/linearGaugeComponent.vue').default);
+Vue.component('chart-component', require('./components/ChartComponent.vue').default);
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
