@@ -39,7 +39,10 @@
                   fontColor:'#ccc',
                   plots:[
                     'rpm',
-                    'speed'
+                    'speed',
+                    'coolantTemp',
+                    'fuelLevel',
+                    'voltage'
                   ],
                   updateRate:1000
                 }

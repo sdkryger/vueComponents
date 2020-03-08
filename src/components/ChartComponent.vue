@@ -60,7 +60,16 @@
             }
           ]
         },
-        plotNames:[]
+        plotNames:[],
+        chartColors:[
+          "rgb(255, 99, 132)", 
+          "rgb(255, 159, 64)",
+          "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)",
+          "rgb(54, 162, 235)",
+          "rgb(153, 102, 255)",
+          "rgb(201, 203, 207)"
+        ]
       }
     },
     props:['config'],
@@ -99,18 +108,21 @@
       resetChart(){
         this.data.labels = [];
         this.data.datasets = [];
+        var i = 0;
         for (const p of this.plotNames){
+          var color = this.chartColors[i % this.chartColors.length];
           console.log("Plot name is: "+p);
           var dataset = {};
           dataset.label = p;
           dataset.data = [];
-          dataset.backgroundColor= 'rgba(255, 159, 64, 0.2)';
-          dataset.borderColor= 'rgba(255, 159, 64, 1)';
+          dataset.backgroundColor= color;
+          dataset.borderColor= color;
           dataset.fill=false;
           dataset.lineTension=0;
           dataset.borderWidth=1;
           dataset.pointRadius=0;
           this.data.datasets.push(dataset);
+          i++;
         }
 
       }
