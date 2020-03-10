@@ -35,7 +35,7 @@
             return{
                 message: "hello",
                 chartOptions:{
-                  bufferLength:300,
+                  bufferLength:100,
                   fontColor:'#ccc',
                   plots:[
                     'rpm',
