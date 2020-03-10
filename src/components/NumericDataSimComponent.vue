@@ -32,13 +32,13 @@
     props:['name','myData'],
     methods:{
       updateValue(event){
-        this.$root.$mqtt.publish('numericData/'+this.name,event.target.value);
+        this.$root.$mqtt.publish('numericData/'+this.name,event.target.value,{qos:1,retain:true});
       },
       stepChange(direction){
         var value = this.myData.value + parseFloat(this.stepSize);
         if(direction == 'less')
           value = this.myData.value - this.stepSize;
-        this.$root.$mqtt.publish('numericData/'+this.name,value.toString());
+        this.$root.$mqtt.publish('numericData/'+this.name,value.toString(),{qos:1,retain:true});
       }
     },
     data(){

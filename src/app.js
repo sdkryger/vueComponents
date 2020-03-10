@@ -46,7 +46,9 @@ new Vue({
     console.log("root mounted");
   },
   created(){
-    Vue.use(VueMqtt, 'mqtt://'+'localhost'+':9001', {clientId: 'WebClient-' + parseInt(Math.random() * 100000)});
+    //Vue.use(VueMqtt, 'mqtt://'+'localhost'+':9001', {clientId: 'WebClient-' + parseInt(Math.random() * 100000)});
+    Vue.use(VueMqtt, 'mqtt://'+'99.79.52.237'+':9001', {clientId: 'WebClient-' + parseInt(Math.random() * 100000)});
+    
     this.$mqtt.publish('test from me','yes, working');
     this.$mqtt.subscribe('numericData/#');
     this.$mqtt.on("message", function(topic, message) {

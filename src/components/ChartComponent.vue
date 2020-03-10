@@ -92,7 +92,7 @@
         this.chart.update();
       },
       updateData(){
-        console.log("update chart");
+        //console.log("update chart");
         var maxPoints = this.config.bufferLength;
         this.data.labels.push('0');
         if(this.data.labels.length>maxPoints)
