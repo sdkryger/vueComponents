@@ -1,6 +1,6 @@
 <template>
   <div class="col">
-    <canvas :id="id" width="400" height="300"></canvas>
+    <canvas :id="id"></canvas>
     <div class="btn btn-secondary" @click="addPoint()">Add point</div>
     <div class="btn btn-secondary" @click="resetChart()">Reset</div>
   </div>
@@ -43,7 +43,8 @@
                 fontColor:this.config.fontColor
               }
 				  	}]
-				  }
+				  },
+          aspectRatio:this.config.aspectRatio
         },
         data:{
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],

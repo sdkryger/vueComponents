@@ -44,7 +44,9 @@
                     'fuelLevel',
                     'voltage'
                   ],
-                  updateRate:1000
+                  updateRate:1000,
+                  heightPercent:40,
+                  aspectRatio:3
                 }
             }
         },
