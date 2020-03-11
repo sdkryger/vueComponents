@@ -10,6 +10,7 @@ Vue.component('numeric-data-sim-component', require('./components/NumericDataSim
 Vue.component('radial-gauge-component', require('./components/RadialGaugeComponent.vue').default);
 Vue.component('linear-gauge-component', require('./components/linearGaugeComponent.vue').default);
 Vue.component('chart-component', require('./components/ChartComponent.vue').default);
+Vue.component('nav-component', require('./components/NavComponent.vue').default);
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
@@ -66,6 +67,5 @@ new Vue({
       }
       
     }.bind(this));
-  },
-  render: h => h(App)
+  }
 })
