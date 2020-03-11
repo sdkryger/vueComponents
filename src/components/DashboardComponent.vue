@@ -16,9 +16,6 @@
       </div>
     </div>
    
-    <div class="row">
-      <modify-numeric-data-component class="col-12"></modify-numeric-data-component>
-    </div>
   </div>
 </template>
 

@@ -22,6 +22,9 @@
         <dashboard-2-component v-if="view == 'dashboard2'"></dashboard-2-component>
         
       </div>
+      <div class="row" v-if="simData">
+        <modify-numeric-data-component class="col-12"></modify-numeric-data-component>
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +33,8 @@
     export default {
         data(){
             return{
-                message: "hello"
+                message: "hello",
+                simData:true
             }
         },
         mounted: function () {
