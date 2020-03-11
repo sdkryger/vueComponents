@@ -1,14 +1,12 @@
 'use strict'
 
 const { VueLoaderPlugin } = require('vue-loader')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require('path');
 
 module.exports = {
     mode: 'development',
     entry: [
       './src/app.js',
-      //'./src/scss/app.scss'
+      './src/scss/app.scss'
     ],
     resolve: {
       alias: {
@@ -23,44 +21,27 @@ module.exports = {
         },
         {
           test: /\.(scss)$/,
-          use: [
-            {
-              // After all CSS loaders we use plugin to do his work.
-              // It gets all transformed CSS and extracts it into separate
-              // single bundled file
-              loader: MiniCssExtractPlugin.loader
-            }, 
-            {
-              // Adds CSS to the DOM by injecting a `<style>` tag
-              loader: 'style-loader'
-            },
-            {
-              // Interprets `@import` and `url()` like `import/require()` and will resolve them
-              loader: 'css-loader'
-            },
-            {
-              // Loader for webpack to process CSS with PostCSS
-              loader: 'postcss-loader',
-              options: {
-                plugins: function () {
-                  return [
-                    require('autoprefixer')
-                  ];
-                }
+          use: [{
+            loader: 'style-loader', // inject CSS to page
+          }, {
+            loader: 'css-loader', // translates CSS into CommonJS modules
+          }, {
+            loader: 'postcss-loader', // Run post css actions
+            options: {
+              plugins: function () { // post css plugins, can be exported to postcss.config.js
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
               }
-            },
-            {
-              // Loads a SASS/SCSS file and compiles it to CSS
-              loader: 'sass-loader'
             }
-          ]
+          }, {
+            loader: 'sass-loader' // compiles Sass to CSS
+          }]
         }
       ]
     },
     plugins: [
-      new VueLoaderPlugin(),
-      new MiniCssExtractPlugin({
-        filename: "bundle.css"
-      })
+      new VueLoaderPlugin()
     ]
   }
