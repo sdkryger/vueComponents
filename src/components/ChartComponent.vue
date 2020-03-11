@@ -1,8 +1,6 @@
 <template>
   <div class="col">
     <canvas :id="id"></canvas>
-    <div class="btn btn-secondary" @click="addPoint()">Add point</div>
-    <div class="btn btn-secondary" @click="resetChart()">Reset</div>
   </div>
 </template>
 
@@ -85,13 +83,6 @@
       window.setInterval(this.updateData,this.config.updateRate);
     },
     methods:{
-      addPoint(){
-        console.log("Should add a point");
-        this.data.labels.push('0');
-        this.data.datasets[0].data.push(Math.floor(Math.random()*20));
-        
-        this.chart.update();
-      },
       updateData(){
         //console.log("update chart");
         var maxPoints = this.config.bufferLength;

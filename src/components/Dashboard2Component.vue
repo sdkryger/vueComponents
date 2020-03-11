@@ -1,6 +1,9 @@
 <template>
   <div class="col">
     <div class="row">
+      <chart-component :config="chartOptions"></chart-component>
+    </div>
+    <div class="row">
       <div class="col">
         <div class="row">
           <radial-gauge-component class="col-4" name="fuelLevel" :options="gaugeFuelLevelOptions"></radial-gauge-component>
@@ -26,6 +29,20 @@
   export default{
     data(){
       return{
+        chartOptions:{
+                  bufferLength:100,
+                  fontColor:'#ccc',
+                  plots:[
+                    'rpm',
+                    'speed',
+                    'coolantTemp',
+                    'fuelLevel',
+                    'voltage'
+                  ],
+                  updateRate:1000,
+                  heightPercent:40,
+                  aspectRatio:3
+                },
         gaugeRpmOptions:{
           yes:'one',
           minValue:0,

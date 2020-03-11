@@ -18,9 +18,6 @@
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <chart-component :config="chartOptions"></chart-component>
-      </div>
-      <div class="row">
         <dashboard-component v-if="view == 'dashboard'"></dashboard-component>
         <dashboard-2-component v-if="view == 'dashboard2'"></dashboard-2-component>
         
@@ -33,21 +30,7 @@
     export default {
         data(){
             return{
-                message: "hello",
-                chartOptions:{
-                  bufferLength:100,
-                  fontColor:'#ccc',
-                  plots:[
-                    'rpm',
-                    'speed',
-                    'coolantTemp',
-                    'fuelLevel',
-                    'voltage'
-                  ],
-                  updateRate:1000,
-                  heightPercent:40,
-                  aspectRatio:3
-                }
+                message: "hello"
             }
         },
         mounted: function () {
